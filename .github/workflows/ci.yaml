@@ -1,0 +1,11 @@
+name: Github Actions Hello World Demo
+
+on: [push]
+
+jobs:
+  my-first-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: printing hello
+        run: |
+          echo "Hello World"
