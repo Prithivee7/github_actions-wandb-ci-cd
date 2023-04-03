@@ -9,3 +9,7 @@ jobs:
       - name: printing hello
         run: |
           echo "Hello World"
+      - name: Running a basic python application
+        run: |
+          pip install -r requirements.txt
+          python ci.py
