@@ -1,0 +1,14 @@
+name: Trigger-Demo
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  trigger-demo-jon:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Running the trigger when a push/ pull request/ manual trigger
+        run: echo "I am Sentinent"
