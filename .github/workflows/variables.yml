@@ -24,4 +24,4 @@ jobs:
         env:
           PUSHER: ${{ toJSON(github.event.pusher.name) }}
           EMAIL: ${{ toJSON(github.event.pusher.email) }}
-        run: echo "${PUSHER} pushed this. The email is $(EMAIL)"
+        run: echo "${PUSHER} pushed this. The email is ${EMAIL}"
