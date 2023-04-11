@@ -1,6 +1,6 @@
 name: Github Actions Hello World Demo
 
-on: [pull_request]
+on: [push]
 
 jobs:
   my-first-job:
