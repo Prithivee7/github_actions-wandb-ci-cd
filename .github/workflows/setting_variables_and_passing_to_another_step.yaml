@@ -1,0 +1,16 @@
+name: Setting Variables in One step and passing it into another
+on: [push]
+
+jobs:
+  io_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Setting Variable
+        id: set-var
+        shell: python
+        run: |
+          import os
+          with open(os.environ['GITHUB_OUTPUT'],'a') as f:
+            print(f"VAL=true",file=f)
+      - name: Print value
+        run: echo "The value is ${{steps.set-var.outputs.VAL}}"
