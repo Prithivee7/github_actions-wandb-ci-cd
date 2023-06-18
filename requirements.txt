@@ -1,1 +1,5 @@
 wandb
+pandas
+pytest
+joblib
+scikit-learn

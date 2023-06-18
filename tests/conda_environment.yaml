@@ -1,0 +1,10 @@
+name: titanic_environment
+channels:
+  - defaults
+dependencies:
+  - python=3.9
+  - wandb
+  - pandas
+  - pytest
+  - joblib
+  - scikit-learn
