@@ -1,2 +1,1 @@
-tests/venv_wandb/
-tests/wandb/
+venv_pytest/
