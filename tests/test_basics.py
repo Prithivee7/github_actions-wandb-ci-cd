@@ -4,7 +4,7 @@ import joblib
 import numpy as np
 import shutil
 
-def check_pred():
+def test_check_pred():
     with wandb.init(project="titanic-project") as run:
 
         artifact = run.use_artifact(

@@ -26,6 +26,6 @@ jobs:
 
       - run: |
           micromamba activate titanic_environment
-          pytest -v
+          pytest -v tests/test_basics.py
         env:
           WANDB_API_KEY: ${{ secrets.WANDB_API_KEY }}
