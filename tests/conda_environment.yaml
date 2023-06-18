@@ -3,8 +3,9 @@ channels:
   - defaults
 dependencies:
   - python=3.9
-  - wandb
-  - pandas
-  - pytest
-  - joblib
-  - scikit-learn
+  - pip:
+      - wandb
+      - pandas
+      - pytest
+      - joblib
+      - scikit-learn
