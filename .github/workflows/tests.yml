@@ -25,7 +25,7 @@ jobs:
           cache-downloads: true
 
       - run: |
-          micromamba activate course
+          micromamba activate titanic_environment
           pip install -U pytest
           pytest tests/unit_test.py
         env:
