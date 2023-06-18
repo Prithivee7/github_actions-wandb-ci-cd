@@ -2,12 +2,10 @@ import wandb
 import os
 import joblib
 import numpy as np
-from params import project_name
 import shutil
 
-
 def check_pred():
-    with wandb.init(project=project_name) as run:
+    with wandb.init(project="titanic-project") as run:
 
         artifact = run.use_artifact(
             'prithiveer/model-registry/My first Registered Model:v2', type='model')
