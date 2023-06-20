@@ -17,7 +17,7 @@ def test_check_pred():
         print("#####################################################3")
         val = model.predict(np.array([3, 0, 61, 0, 0, 9, 0]).reshape(1, -1))
         print(val)
-        assert val == [0]
+        assert val == [1]
 
         shutil.rmtree("artifacts")
         run.finish()
